@@ -1,3 +1,5 @@
+Minictf
+
 Writeup for our "minictf" held 8/9 -22 as an introduction to CTFs.
 
 Web challenges require Halmstad University account to access and the OSINT challenges are open to anyone.
