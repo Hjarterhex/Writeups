@@ -1,5 +1,8 @@
 # WiFi
 
+Solves: 19
+Points: 138
+
 ## Challenge description
 
 What is the name of the WiFi network that the phone was last connected to?
