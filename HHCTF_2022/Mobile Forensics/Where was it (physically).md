@@ -1,6 +1,6 @@
-# WiFi
+# Where was it (physically)?
 
-Solves: 19 <br/> Points: 138
+Solves: 18 <br/> Points: 156
 
 ## Challenge description
 
