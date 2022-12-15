@@ -10,7 +10,7 @@ Flag format: HHCTF{URL}
 
 ## Solution
 
-Since we already know from "Which app is it?" that Cocoa core time is used and UTC+0 is the time zone in Portable Case file. The human time is as follows:
+Since we already know from "Which app is it?" that Cocoa core time is used and UTC+0 (GMT) is the time zone in Portable Case file. The human time is as follows:
 
 ![Cocoa time to human time](../img/where_dig_1.png)
 
