@@ -14,7 +14,7 @@ We get a timestamp which looks a bit like Unix epoch time, but if we convert it 
 
 ![Cocoa time](../img/which_app_1.png)
 
-This means that the timestamp is in Cocoa core format. If we convert the Cocoa core timestam to Human date, we get the following timestamp:
+This means that the timestamp is in Cocoa core format. If we convert the Cocoa core timestamp to Human date, we get the following timestamp:
 
 ![Converted cocoa time](../img/which_app_2.png)
 
