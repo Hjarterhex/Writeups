@@ -18,4 +18,4 @@ We find the conversation regarding the importation of flags. By reading the conv
 
 ![Flag in plain text](../img/flagman_2.png)
 
-**Flag:** `HHCTF{Th3_h0tt3st_sp0t}`
+**Flag:** `HHCTF{DeeP_4nd_Meaningful_c0nvers4tion}`
