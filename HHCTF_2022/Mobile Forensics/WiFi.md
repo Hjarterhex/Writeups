@@ -20,4 +20,4 @@ Here we can see information such as Network Name, Connection Type, Cell ID/MAC A
 
 Here we see that the last WiFi connection had the Network Name "Th3_h0tt3st_sp0t".
 
-Flag: HHCTF{Th3_h0tt3st_sp0t}
+**Flag:** HHCTF{Th3_h0tt3st_sp0t}
