@@ -22,7 +22,7 @@ This leaves the SubBytes step. To get all zeroes after this step, we need to sen
 
 So we send the string `RRRRRRRRRRRRRRRR` to the service, the output is the encryption key, which we can feed into our decryption algorithm to decrypt the flag.
 
-![Getting the key](../../../../D:/ctf/Writeups/HHCTF_2022/img/laes-2_4.png)
+![Getting the key](img/laes-2_4.png)
 
 ```python
 laes = LAES(base64.b64decode('9zse/v4SWJNHROaWhAEX2A=='))

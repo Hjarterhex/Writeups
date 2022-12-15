@@ -37,4 +37,4 @@ Now we just need to find the request that contains the flag. After browsing thro
 
 ![Flag](img/ids_7.png)
 
-Flag: HHCTF{N3Xt_T1M3_W3_G0_F0R_tLs}
+Flag: `HHCTF{N3Xt_T1M3_W3_G0_F0R_tLs}`
