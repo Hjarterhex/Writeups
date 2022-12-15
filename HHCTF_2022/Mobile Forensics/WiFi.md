@@ -1,6 +1,6 @@
 # WiFi
 
-Solves: 19 <\n> Points: 138
+Solves: 19 <n/> Points: 138
 
 ## Challenge description
 
