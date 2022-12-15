@@ -11,7 +11,6 @@ Flag format: The address, HHCTF{Street_name_streetnumber}
 ## Solution
 
 First, we need to find where the information about Locations are stored. In the Portable Case file there is a category called "LOCATION & TRAVEL. By clicking in that, we see a subcategory called Cached Locations.
-A
 
 ![Location & Travel](../img/where_phys_1.png)
 
