@@ -10,7 +10,7 @@ Flag format: HHCTF{Name_of_app}
 
 ## Solution
 
-We get a timestamp which looks a bit like Unix epoch time, but if we convert it from Unix epoch time to Human date we get the followinf timestamp: Saturday 16 November 1991 08:04:46. This is way too early for it to be the right timestamp. So, if we google "Apple timestamp", we get the following result:
+We get a timestamp which looks a bit like Unix epoch time, but if we convert it from Unix epoch time to Human date we get the following timestamp: Saturday 16 November 1991 08:04:46. This is way too early for it to be the right timestamp. So, if we google "Apple timestamp", we get the following result:
 
 ![Cocoa time](../img/which_app_1.png)
 
