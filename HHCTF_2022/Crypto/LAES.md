@@ -20,7 +20,7 @@ As the description says we need to implement the decryption, which means creatin
 
 The add key step can be reused, since XOR is an invertible operation.
 
-The inverse mix columns is a matrix multiplication with a [different matrix](https://en.wikipedia.org/wiki/Rijndael_MixColumns#InverseMixColumns), which means we can just adapt the provided medthod, replacing the numbers:
+The inverse mix columns is a matrix multiplication with a [different matrix](https://en.wikipedia.org/wiki/Rijndael_MixColumns#InverseMixColumns), which means we can just adapt the provided method, replacing the numbers:
 
  ```python
      def inv_mix_columns(self):
@@ -42,7 +42,7 @@ The inverse shift rows step, can also be implemented with a slight modification 
                 self.state[i + j * 4] = temp[(j - i) % 4]
 ```
 
-For the inverse SubBytes step, we need to create an inverse sBox, by adding this class method (and calling it from the `__init__` method)
+For the inverse SubBytes step, we need to create an inverse S-box, by adding this class method (and calling it from the `__init__` method)
 
 ```python
     @classmethod
@@ -52,7 +52,7 @@ For the inverse SubBytes step, we need to create an inverse sBox, by adding this
             cls.inv_sbox[cls.sbox[i]] = i
 ```
 
-The we can just copy the original method, changing it to use the inverted sBox instead
+The we can just copy the original method, changing it to use the inverted S-box instead
 
 ```python
     def inv_sub_bytes(self):
