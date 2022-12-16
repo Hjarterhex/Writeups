@@ -14,7 +14,7 @@ This can be solved in a couple of different ways. We're going to present two sol
 
 ### Solution 1
 
-By clicking on "EVIDENCE SOURCES" when we have opened the Portable Case file, we get the most basic information about the phone. Information such ass IMEI number, Serial Number, and Device Name. The OS version is also presented here.
+By clicking on "EVIDENCE SOURCES" when we have opened the Portable Case file, we get the most basic information about the phone. Information such as IMEI number, Serial Number, and Device Name. The OS version is also presented here.
 
 ![Evidence sources](../img/os_version_1.png)
 
