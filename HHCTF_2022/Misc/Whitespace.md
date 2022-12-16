@@ -12,7 +12,7 @@ We are given a python file which, as said in the description, doesn't work, it f
 
 By following some links, we can see that there are a number of interpreters we can choose from.
 
-![Whitespace interpreters](../../../../../D:/ctf/Writeups/HHCTF_2022/img/whitespace_2.png)
+![Whitespace interpreters](../img/whitespace_2.png)
 
 We download the one called pywhitespace, but it seems to only execute some statically defined programs (and fails at that as well). We modify it a bit to execute our file instead, which will give us the flag.
 
