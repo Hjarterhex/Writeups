@@ -72,7 +72,7 @@ async function gl() {
 
 setInterval(cc, 125)
 ```
-The function and valiable names is a bit cryptic, but we can see that the `me()` function calls the `gf()` function, which in turn calls the `gp()`and `gl()` functions. These functions uses fetch, to get some data from `/flag`, using `POST`-requests. We could go for mimicking the requests, but why bother, since it seems to already be done here? Instead we go to the console and call the `me()` function (seems pretty obvious when we think about it). since it's an `async` function we use the `await` keyword (another hint from the page).
+The function and variable names is a bit cryptic, but we can see that the `me()` function calls the `gf()` function, which in turn calls the `gp()`and `gl()` functions. These functions uses fetch, to get some data from `/flag`, using `POST`-requests. We could go for mimicking the requests, but why bother, since it seems to already be done here? Instead we go to the console and call the `me()` function (seems pretty obvious when we think about it). since it's an `async` function we use the `await` keyword (another hint from the page).
 
 Note: the
 
