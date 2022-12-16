@@ -4,8 +4,8 @@
 
 AES is just too complex, so I created LAES - Less Advanced Encryption Standard. It reduces the complexity by just doing one round of encryption, so it doesn't have to worry about key scheduling. I encrypted a message for you, but unfortunately I haven't had the time to write the decryption algorithms, so you will have to to that yourself.
 
-Anyway, here is the message and the key:
-Message (base64): 39l77mfrP3AnWdbKek1UaTNXfe6aJoBqVaZ+QVVaBfU=
+Anyway, here is the message and the key:  
+Message (base64): 39l77mfrP3AnWdbKek1UaTNXfe6aJoBqVaZ+QVVaBfU=  
 Key (hex): c4 23 6c b7 86 fe 1f 8e 0e 12 e2 13 09 32 ed 55
 
 ## Solution
