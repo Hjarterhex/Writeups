@@ -18,7 +18,7 @@ This means that the timestamp is in Cocoa core format. If we convert the Cocoa c
 
 ![Converted cocoa time](../img/which_app_2.png)
 
-And since the time zone is UTC+0 (GMT) as standard in the Portable Case file, we will use the timstamp Wednesday, November 16, 2022 8:04:46. By going to the category "APPLICATION USAGE", there is a subcategory called "KnowledgeC Application Usage". KnowledgeC is a database that stores an event log of multiple processes that run within an Apple device. In the KnowledgeC Application Usage category there is information such as Application Name, Start Date/Time, and End Date/Time. If we order by Start Date/Time, we find out that the Application Name "com.toyopagroup.picaboo" was opened at that time.
+And since the time zone UTC+0 (GMT) is used as standard in the Portable Case file, we will use the timestamp Wednesday, November 16, 2022 8:04:46. By going to the category "APPLICATION USAGE", there is a subcategory called "KnowledgeC Application Usage". KnowledgeC is a database that stores an event log of multiple processes that run within an Apple device. In the KnowledgeC Application Usage category there is information such as Application Name, Start Date/Time, and End Date/Time. If we order by Start Date/Time, we find out that the Application Name "com.toyopagroup.picaboo" was opened at that time.
 
 ![com toyopagroup picaboo](../img/which_app_3.png)
 
