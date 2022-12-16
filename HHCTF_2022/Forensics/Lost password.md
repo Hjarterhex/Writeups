@@ -14,27 +14,27 @@ We are given an e01 file - a forensic image of a storage medium, in this case a 
 
 Opening the file in e.g. Autopsy reveals a github link in the slack space of the password.txt file.
 
-![Autopsy](img/password_1.png)
+![Autopsy](../img/password_1.png)
 
 By looking at the github repository, it can be assumed that this tool has been used to hide the file. To install the tool, we can clone the repository, and install it via pip. Note that the tool only works in windows.
 
-![Install fat32utils](img/password_2.png)
+![Install fat32utils](../img/password_2.png)
 
 But to use the tool, the image needs to be mounted as a fat32 filesystem. This can be accomplished using [OSForensics OSFMount](https://www.osforensics.com/tools/mount-disk-images.html). Then we can run fat32utils to restore the file.
 
-![restore](img/password_3.png)
+![restore](../img/password_3.png)
 
 Then we can open our newly mounted drive via explorer and read the file.
 
-![Restored file](img/password_4.png)
+![Restored file](../img/password_4.png)
 
 ## Solution 2
 
 We are asked to find the password for his email address. This can be found e.g. via a keyword search in Autopsy. The email is `freddietheking@yahoo.com`. By opening the entire drive in HxD, we can do a text search of the entire drive.
 
-![Open in HxD](img/password_5.png)
+![Open in HxD](../img/password_5.png)
 
-![HxD search](img/password_6.png)
+![HxD search](../img/password_6.png)
 
 Flag: `HHCTF{e9fim&Y&cXT!H6h%K$M3syp^AznYto6cyy97VqCV*@H3Lkuwqs8S!QWH4CHv$SH9}`
 
