@@ -83,6 +83,6 @@ Note: the
 ```
 part of the code means we have to have the page visible, or the function will fail. (We could of course remove that part in the sources tab if we want to)
 
-![Get the flag](../../../../../D:/ctf/Writeups/HHCTF_2022/img/call_me_1.png)
+![Get the flag](../img/call_me_1.png)
 
 Flag: `HHCTF{1'm_n3v3r_m0r3_th4n_4_func710n_c4ll_4w4y}`
