@@ -10,7 +10,7 @@ Flag Format: HHCTF{Location}
 
 ## Solution
 
-In the "iOS iMessage/SMS/MMS" subcategory under the "COMMUNICATION" category, we find the conversation regarding a drug deal. If we read through the conversation, the buyer asks if the seller "Can deliver here?", and sends a sound file containing morse code.
+In the "iOS iMessage/SMS/MMS" subcategory under the "COMMUNICATION" category, we find the conversation regarding a drug deal. If we read through the conversation, the buyer asks if the seller "Can you deliver here?", and sends a sound file containing morse code.
 
 ![Message location](../img/secret_m_1_1.png)
 
