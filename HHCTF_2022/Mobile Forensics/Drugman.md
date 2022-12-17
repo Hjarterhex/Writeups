@@ -21,7 +21,7 @@ Remember:
 
 😁 (U+1F601)= A
 
-This shows that the last two numbers of the Unicode belonging to the specific Emoji is translated into the letter which has that position in the alphabet.
+So, the last two numbers of the Unicode belonging to the specific Emoji is translated into the letter which has that position in the alphabet.
 
 Example: The emojis 😈😅🤥 have the Unicode values U+1F608, U+1F605, and U+1F925. That is translated into HEY since H is the eighth letter in the alphabet and so on.
 
